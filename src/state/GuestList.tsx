@@ -1,8 +1,8 @@
-import { link } from "fs";
+// import { link } from "fs";
 import { useState } from "react";
 
 const GuestList: React.FC = () => {
-    const [name, setName] = useState('');
+    const [name, setName] = useState<string>('');
     const [guests, setGuests] = useState<string[]>([]);
 
     const onClick = () => {
